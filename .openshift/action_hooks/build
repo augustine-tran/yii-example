@@ -6,5 +6,11 @@
 if [ ! -d $OPENSHIFT_DATA_DIR/runtime ]; then
     mkdir $OPENSHIFT_DATA_DIR/runtime
 fi
- 
-ln -sf $OPENSHIFT_DATA_DIR/runtime $OPENSHIFT_REPO_DIR/php/protected/runtime/
+
+ln -sf $OPENSHIFT_DATA_DIR/runtime $OPENSHIFT_REPO_DIR/php/protected/runtime
+
+if [ ! -d $OPENSHIFT_DATA_DIR/assets ]; then
+    mkdir $OPENSHIFT_DATA_DIR/assets
+fi
+
+ln -sf $OPENSHIFT_DATA_DIR/assets $OPENSHIFT_REPO_DIR/php/assets
