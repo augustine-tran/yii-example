@@ -1,9 +1,9 @@
 Yii on OpenShift
 ======================
 
-What is Yii[http://www.yiiframework.com/]?
+What is [Yii](http://www.yiiframework.com/)
 ---------------
-(Yii)[http://www.yiiframework.com/]
+[Yii](http://www.yiiframework.com/) is a high-performance PHP framework best for developing Web 2.0 applications. Yii comes with rich features: MVC, DAO/ActiveRecord, I18N/L10N, caching, authentication and role-based access control, scaffolding, testing, etc. It can reduce your development time significantly.
 
 
 This git repository helps you get up and running quickly a Yii installation
