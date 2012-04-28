@@ -487,7 +487,7 @@ class CHttpRequest extends CApplicationComponent
 	 */
 	public function getIsSecureConnection()
 	{
-		return isset($_SERVER['HTTPS']) && !strcasecmp($_SERVER['HTTPS'],'on');
+		return ((isset($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) !== 'off' ) || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https'));
 	}
 
 	/**
